@@ -11,3 +11,11 @@ imagenet data
 - [ ] pretrain huawei data
 
 - [ ] classify imagenet and kaggle data
+
+
+Data Label
+Huahuan: trash, mental
+Zeji: glass, plastic
+Yunyue: cardboard, paper
+
+
