@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES='0' python3 Inference.py  --dist-url 'tcp://127.0.0.1:23143' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 -a 'resnet50' --resume='checkpoint.pth.tar' --evaluate
