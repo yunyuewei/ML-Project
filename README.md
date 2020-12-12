@@ -14,8 +14,11 @@ imagenet data
 
 
 Data Label
+
 Huahuan: trash, mental
+
 Zeji: glass, plastic
+
 Yunyue: cardboard, paper
 
 
