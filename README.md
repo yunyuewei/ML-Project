@@ -6,12 +6,17 @@ torch example: https://github.com/pytorch/examples/tree/master/imagenet
 
 imagenet data
 
-## TODO
+## TODO 12.12
 
-- [ ] pretrain huawei data
+- [√] pretrain huawei data
 
-- [ ] classify imagenet and kaggle data
+- [√] classify imagenet and kaggle data
 
+## TODO 12.19
+
+- [ ]
+
+- [ ]
 
 ## Data Label
 
