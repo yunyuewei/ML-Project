@@ -8,9 +8,9 @@ imagenet data
 
 ## TODO 12.12
 
-- [√] pretrain huawei data
+- [x] pretrain huawei data
 
-- [√] classify imagenet and kaggle data
+- [x] classify imagenet and kaggle data
 
 ## TODO 12.19
 
