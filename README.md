@@ -12,11 +12,11 @@ imagenet data
 
 - [x] classify imagenet and kaggle data
 
-## TODO 12.19
+## TODO 1.3
 
-- [ ]
+- [ ] Unify Dataset format
 
-- [ ]
+- [ ] Overcome Overfitting
 
 ## Data Label
 
