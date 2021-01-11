@@ -30,7 +30,6 @@ def visual_importance(model: nn.Module, trans, path_to_image):
         assert isinstance(path_to_image, list)
 
     for file in path_to_image:
-        print(file)
         GLOBAL_offset = 0
         img_path = file.split('/')[-1].split('.')[-2]
         os.makedirs(VISUAL_DIR + '/' + img_path, exist_ok=True)
@@ -44,6 +43,7 @@ def visual_importance(model: nn.Module, trans, path_to_image):
         img = trans(img)
         batch = torch.unsqueeze(img, 0)
         out = model(batch)
+        print("")
 
 
 def plot_features(self: nn.Module, input: torch.Tensor, output: torch.Tensor):
@@ -68,8 +68,10 @@ def plot_features(self: nn.Module, input: torch.Tensor, output: torch.Tensor):
     num_col = 16 if dim_ch % 16 == 0 else 2
     num_row = dim_ch // 16
     H, W = size[2], size[3]
-    out_vis = np.zeros((num_row*H, num_col*W))
 
+    # out_vis = np.sum(vis, axis=0)
+
+    out_vis = np.zeros((num_row*H, num_col*W))
     for row in range(num_row):
         for col in range(num_col):
             out_vis[row*H:(row+1)*H, col*W:(col+1)*W] += vis[row*num_col+col]
@@ -81,4 +83,4 @@ def plot_features(self: nn.Module, input: torch.Tensor, output: torch.Tensor):
     img = Image.fromarray(out_vis)
     # img.convert('L')
     img.save(prefix+'.jpg')
-    print("saved {}.jpg".format(prefix))
+    print("\rsaved {}.jpg".format(prefix), end='')

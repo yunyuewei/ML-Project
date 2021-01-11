@@ -3,12 +3,12 @@ import random
 import shutil
 
 if __name__ == "__main__":
-    dir_data = 'train_data_v2/'
+    dir_data = 'data/rawdata/'
     files = os.listdir(dir_data)
     images = {image.split('.')[0]: [] for image in files}
     images = list(images.keys())
 
-    matched_data = {str(x): [] for x in range(40)}
+    matched_data = {str(x): [] for x in range(42)}
 
     for i, img in enumerate(images):
         assert os.path.isfile(
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # print(list(matched_data.items())[:1])
 
     for c, imgs in matched_data.items():
-        len_val = len(imgs)//6
+        len_val = len(imgs)//11
         random.shuffle(imgs)
 
         # build training data

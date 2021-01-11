@@ -1,0 +1,17 @@
+\section{Conclusion}
+In this project, we collect the images from two open dataset, Huawei garbage classification and Kaggle garbage classification competition, and combine the two datasets into one.
+The dataset in our competition contains over 17000 images in total, which is sufficient large for garbage classification, and the classes of our collected images covered most of 
+common garbages in our daily life.
+
+Based on the collected data, we setup a competition, with the ``garbage classification'' theme, and the task is ``a small granularity'' task compared to the 4 classes urban classification guide\footnote{According to Beijing city garbage classification notification, the urban classification includes kitchen, harmful, recyclable and others garbages.}, 
+which includes 42 classes of garbages. Thus our competition is 
+relative difficulty.
+
+As for the solutions to our competition, we try using various of modern widely used models, including ResNet, DenseNet, eta. We use accuracy, precision, F1 score and confusion matrix as the performance metrics
+and compare different models.
+
+In test set, the DenseNet201 pretrained on ImageNet obtains the best accuracy 88.32\%. Compare with ResNet and VGGNet, DenseNet performs better on both 
+training set and test set. For different architectures, the pretrained models consistently perform better.
+We tried add data augmentation methods, like randome rasing, though it seems help little.
+
+We further analysis the how the images of garbages influence the results of classification by visualizing the activation maps. This helps us better understand which part of the input image matters and which does not.
