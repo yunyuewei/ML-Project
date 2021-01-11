@@ -1,1 +1,44 @@
 \section{Introduction}
+
+Since the promulgation of the strictest garbage classification policy in China on July 1 2020, how to carry out garbage classification has become a tricky task of  residents' daily routine. With the knowledge learned in the machine learning class and the wish to beautify the world with technologies, we set up the garbage classification competition. The explosive improvement of AI level strengthened out confidence in the AI-Assisted garbage classification task. Therefore, the purpose of this garbage classification challenge cup is to build an image classification model based on deep learning technology, and realize the accurate recognition of garbage image categories. Also to bring more attention on rational use of resources among people. The competition refers to China's newest garbage classification standard, and classifies according to recyclables, kitchen waste, hazardous waste and other wastes.
+
+In real life, because of the variance of garbage shape, angle, light, background and so on, it is difficult for AI training set data to identify the true face of garbage. Obviously, high generalization ability and anti-interference ability is required for the garbage classification model to ensure the accuracy of model recognition. Developers can not only use the existing tag images, but also label new images themselves. When you label more kinds of garbage pictures, it will improve the accuracy of model recognition and the final score.
+
+The challenge cup is open to the whole society. Individuals, universities, scientific research institutions, enterprises, and other developers can participate. Whether you are an individual who is interested in environmental protection, a team of colleges and universities who are interested in AI, a member of scientific research institutions with unique skills, a team of makers with unlimited creativity, or a busy enterprise developer, we are waiting for you in the Tsinghua-AI garbage classification Challenge Cup.
+
+\subsection{Background}
+
+Manual garbage classification is the first link of garbage treatment, but the link that can deal with massive garbage is garbage treatment plant.However, at present, the domestic garbage treatment plants are basically using manual assembly line sorting method for garbage sorting, there are disadvantages such as poor working environment, high labor intensity, low sorting efficiency. Manual sorting can only sort out a very limited part of recyclable garbage and hazardous garbage, and the vast majority of garbage can only be landfill, which brings great resource waste and environmental pollution risk.
+
+With the application and development of deep learning technology in the field of vision, we see the possibility of using AI to automatically classify garbage. By taking garbage pictures with cameras and detecting the categories of garbage in the pictures, the machine can automatically carry out garbage sorting and greatly improve the efficiency of garbage sorting.
+
+Therefore, we held this garbage classification competition, hoping to jointly explore the AI technology of garbage classification, and contribute their wisdom to the national project of garbage classification, which benefits the country and the people.
+
+\subsection{Requirement and Standard}
+
+This competition adopts Beijing garbage classification standard. The task of the competition is to classify the garbage pictures, that is, first identify the categories of the items in the garbage pictures (such as cans, peels, etc.), then query the garbage classification rules, and output which of the recyclables, kitchen waste, harmful garbage and other garbage in the garbage category.
+
+The format of the output result required is:" result ": "recyclable/cans". i.e. first the broad category then the specific item.
+
+Recyclable material refers to the waste suitable for recycling and resource utilization, including discarded glass, metal, plastic, paper, fabric, furniture, electrical and electronic products and annual flowers and oranges, etc.Kitchen waste refers to the perishable waste produced by families and individuals, including leftovers, vegetable leaves, peel, eggshells, tea leaves, soup residues, bones, waste food and kitchen scraps.Hazardous waste refers to the waste that causes direct or potential harm to human health or the natural environment and should be specially treated, including waste batteries, waste fluorescent lamps, etc.Other garbage refers to other household garbage other than the above three types of garbage, such as diapers, dust, cigarette butts, disposable fast food boxes, broken flower POTS and dishes, wallpaper, etc.
+\begin{table}[]
+    \begin{tabular}{lllll}
+        \cline{1-2}
+        \multicolumn{1}{|l|}{file name}                 & \multicolumn{1}{l|}{Explaination}                                                                           &  &  & \\ \cline{1-2}
+        \multicolumn{1}{|l|}{data}                      & \multicolumn{1}{l|}{Training set directory, including garbage pictures and corresponding tag files (. Txt)} &  &  & \\ \cline{1-2}
+        \multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}classify\\ \_rule.json\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}In the dictionary of garbage classification rules, the key value is ID,\\ and the value is "garbage type / specific item name".\\ For example, the training data image tagged img\_1.jpg The content of img\_1.txt\\ is "img\_1.jpg, 0" for img\_ 1.jpg meaning the garbage in this picture is \\ "other garbage / disposable fast food box"\end{tabular}}                                                              &  &  & \\ \cline{1-2}
+                                                        &                                                                                                             &  &  &
+    \end{tabular}
+\end{table}
+
+This competition uses recognition accuracy as the evaluation index. As shown in the example of model output format above, the item category predicted by the model is "can". If the real category of the picture is can, the picture prediction is correct, otherwise the prediction is wrong. The calculation method of evaluation index is as follows:
+Recognition accuracy = number of correct pictures / total number of pictures
+
+However,due to the variety of image data and the potential imbalance among different categories, we encourage the participants to evlaluate the model with more delicate method and thoughts.
+
+\subsection{Backstage Organization}
+
+First part is the essential for the garbage classification task, which is how we collect the data. In fact, for most  image related task, the collection of data-set is arguably the most important. Fortunately, for our task, we employ several methods to collect the data. The size of dataset reached 18000 images in the end. The source of the data are basically consists of the following aspects.
+
+First is the huawei-data set. Through careful searching of internet we found this is the biggest among all the resoureces. Besides, it is classified into most specific categories. We believe that finer segmentation is the better the performance will be.
+

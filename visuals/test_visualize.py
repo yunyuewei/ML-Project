@@ -12,7 +12,7 @@ model_names = sorted(name for name in models.__dict__
 
 
 def main():
-    imgs = ['data/train/15/img_7224.jpg']
+    imgs = ['data/train/15/img_7224.jpg', 'data/train/26/img_12875.jpg']
 
     # create model
     path = 'resnet152_model_best.pth.tar'
