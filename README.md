@@ -29,7 +29,7 @@ https://www.kaggle.com/asdasdasasdas/garbage-classification
 
 **baseline:** popular model performance on the dataset. 
 
-**visual** visualization results of the models
+**visual:** visualization results of the models
 
 
 
