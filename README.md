@@ -1,29 +1,46 @@
-# ML-Project
+# Machine Learning Project 2020
 
-huawei code: https://github.com/QLMX/huawei-garbage
+## Garbage Classification Competition
 
-torch example: https://github.com/pytorch/examples/tree/master/imagenet
+### Database Composition
 
-imagenet data
+Our competition dataset is composed of two datasets:
 
-## TODO 12.12
+**Huawei Cloud Garbage Classification Competition**
 
-- [x] pretrain huawei data
+https://modelarts-competitions.obs.cn-north-1.myhuaweicloud.com/garbage_classify/dataset/garbage_classify_v2.zip
 
-- [x] classify imagenet and kaggle data
+**Kaggle Garbage Classification Dataset**
+https://www.kaggle.com/asdasdasasdas/garbage-classification
 
-## TODO 1.3
+**Full dataset link**: https://cloud.tsinghua.edu.cn/f/8663ecbd6f944fafa40f/
 
-- [ ] Unify Dataset format
+**Number of classes:** 42
 
-- [ ] Overcome Overfitting
+**Training set size:** 15522
 
-## Data Label
+**Test set size:** 2371
 
-Huahuan: trash, mental
+### Repository composition
 
-Zeji: glass, plastic
+**report:** latex code of the project report
 
-Yunyue: cardboard, paper
+**SimClassifier:** data labeling, integration, and splitting code.
+
+**baseline:** popular model performance on the dataset. 
+
+**visual** visualization results of the models
+
+
+
+
+
+
+
+
+
+
+
+
 
 
