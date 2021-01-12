@@ -467,6 +467,27 @@ We draw the validation confusion matrix of all the models. To better observe the
   \vspace{0.2in}
 \end{figure}
 
+\begin{figure}[H]
+  \begin{minipage}[b]{.5\linewidth}
+    \centering
+    {\includegraphics[width=1.2\textwidth]{figs/resnext_conf1.png}}
+    \subcaption{ResNext}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{.5\linewidth}
+    \centering
+
+    {\includegraphics[width=1.2\textwidth]{figs/resnext_conf2.png}}
+    \subcaption{Log ResNext}
+  \end{minipage}
+
+  \caption{Confusion Matrix of ResNeXt}
+  \label{fig:resnext}
+  \vspace{0.2in}
+\end{figure}
+
+There is some patter in the confusion matrix. For example the 30-35 columns are more highlighted than others, may because there are more datas there. And the net tends to make more decisions there.
+
 \subsubsection{Precision, Recall and F1-score}
 The model prediction can be classified into four cases: true positive (TP), true negative (TN), false positive (FP), and false negative(FN). After counting the number of these four cases, the computation of precision and recall is as following equations:
 
@@ -496,7 +517,7 @@ We compute all of the metrics on all the models, and concluded as Table \ref{tab
 
 Among all of 24 models, the pretrained DenseNet201 take the first place in both top1 validation accuracy and F1-score. The highest top1 validation accuracy is under 90\%, which means there is still large space for us to improve the model performance.
 
-\begin{table}[t]
+\begin{table}[H]
   \centering
   \caption{Precison, Recall and F1-score of Baseline Models}
   \label{tabel:f1}
@@ -536,12 +557,21 @@ Among all of 24 models, the pretrained DenseNet201 take the first place in both 
   \end{tabular}
 \end{table}
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{figs/rank.png}
   \caption{Performance Rank of Different Evaluation Metrics}
   \label{fig:rank}
 \end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{figs/rank2.png}
+  \caption{Performance Rank With the advanced model}
+  \label{fig:rank}
+\end{figure}
+
+We can tell that no matter in top1 accuracy, precision, recall or F1 score. The advanced model can outperform all the others.
 
 \subsection{Visualization of the activation feature map}
 The activation function ReLU is defined as
@@ -561,7 +591,7 @@ Due to the output features map of latter layers are too small to view, we only d
 As the Fig.~\ref{fig:actmap} shows, the model catch the knapsack in the image even though it is not on the center, showing the ability to
 extract features out of a images.
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \begin{minipage}[b]{\linewidth}
     \centering
     \includegraphics[height=4cm]{figs/img_7224.jpg}

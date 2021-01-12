@@ -1,0 +1,56 @@
+\begin{thebibliography}{1}
+
+\bibitem{bn_reason}
+Jason BROWNLEE.
+\newblock A gentle introduction to batch normalization for deep neural
+  networks.
+\newblock {\em Machine Learning Mastery [online]}, 16, 2019.
+
+\bibitem{vgg_arch}
+Davi Frossard.
+\newblock Vgg in tensorflow.
+\newblock \url{https://www.cs.toronto.edu/~frossard/post/vgg16/}.
+
+\bibitem{resnet2016}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 770--778, 2016.
+
+\bibitem{densenet2017}
+Gao Huang, Zhuang Liu, Laurens Van Der~Maaten, and Kilian~Q Weinberger.
+\newblock Densely connected convolutional networks.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 4700--4708, 2017.
+
+\bibitem{squeezenet2016}
+Forrest~N Iandola, Song Han, Matthew~W Moskewicz, Khalid Ashraf, William~J
+  Dally, and Kurt Keutzer.
+\newblock Squeezenet: Alexnet-level accuracy with 50x fewer parameters and< 0.5
+  mb model size.
+\newblock {\em arXiv preprint arXiv:1602.07360}, 2016.
+
+\bibitem{alexnet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock {\em Communications of the ACM}, 60(6):84--90, 2017.
+
+\bibitem{conf_matrix}
+ANIRUDDHA~BHANDARIRushabh Nagda.
+\newblock Everything you should know about confusion matrix for machine
+  learning.
+\newblock
+  \url{https://www.analyticsvidhya.com/blog/2020/04/confusion-matrix-machine-learning/}.
+
+\bibitem{topk}
+Rushabh Nagda.
+\newblock Evaluating models using the top n accuracy metrics.
+\newblock
+  \url{https://medium.com/nanonets/evaluating-models-using-the-top-n-accuracy-metrics-c0355b36f91b}.
+
+\bibitem{vgg2014}
+Karen Simonyan and Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock {\em arXiv preprint arXiv:1409.1556}, 2014.
+
+\end{thebibliography}
