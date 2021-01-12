@@ -31,6 +31,9 @@ https://www.kaggle.com/asdasdasasdas/garbage-classification
 
 **visual:** visualization results of the models
 
+**Advance Model:** The winner model in the competition
+
+
 
 
 
