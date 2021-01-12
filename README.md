@@ -19,7 +19,7 @@ https://www.kaggle.com/asdasdasasdas/garbage-classification
 
 **Training set size:** 15522
 
-**Test set size:** 2371
+**Test set size:** 1532
 
 ### Repository composition
 
